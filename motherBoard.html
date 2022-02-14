@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!-- css include -->
+    <!-- normalize  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- end normalize  -->
+    <!-- fonts  -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- end fonts  -->
+    <!-- bootstrap-grid  -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- end bootstrap-grid -->
+    <!-- fontawesome-p-5 -->
+    <link rel="stylesheet" href="fontawesome-p-5.13/css/all.min.css">
+    <!-- fontawesome-p-5  -->
+    <!-- main  -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- end main  -->
+    <!-- end css include  -->
+</head>
+
+<body>
+
+    <!-- sidebar  -->
+    <div class="sidebar">
+        <!-- logo  -->
+        <div class="logo">
+            <img src="/img/profile_pic_ic5t.svg" alt="">
+            <span>site name here</span>
+            <i class="fas fa-bars menu-btn js-menu-btn"></i>
+        </div>
+        <!-- end logo  -->
+        <!-- menu  -->
+        <ul class="menu">
+            <!-- menu item  -->
+            <li class="menu-item   ">
+                <a href="dashboard.html" class="item-link active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>home</span>
+                </a>
+            </li>
+            <!-- end menu item  -->
+
+            <!-- menu item  -->
+            <li class="menu-item">
+                <a href="charitys.html" class="item-link">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>client</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="users.html" class="item-link">
+                    <i class="fas fa-users"></i>
+                    <span>agent</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="responsible.html" class="item-link">
+                    <i class="fas fa-person-carry"></i>
+                    <span>stock</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../index.html" class="item-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>logout</span>
+                </a>
+            </li>
+            <!-- end menu item  -->
+
+
+        </ul>
+        <!-- end menu  -->
+    </div>
+    <!-- end sidebar  -->
+    <!-- main content  -->
+    <div id="main-content" class="main-content">
+
+        <!-- start add client  -->
+        <div class="section  container ">
+            <div class="form-holder bg-second">
+                <form action="" class="linear-form">
+                    <div class="col-sm-12 col-md-4">
+                        <input type="text" placeholder="brand" name="brand" class="input">
+                        <input type="text" placeholder="refrence" name="refrence" class="input">
+                        <div class="input">
+                            <input id="files" style="display:none;font-size: 0.8em;" type="file">
+                            <span class="js-files-names color-third">no image selectd</span>
+                            <label for="files" class="btn">Select Image</label>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="list-multy-selection input bg-main">
+                            <!-- list item start  -->
+                            <div class="list-item">
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg">
+                                </div>
+                                <label for="comp1">component1</label>
+                                <input type="checkbox" name="components[]" id="comp1">
+                            </div>
+                            <!-- list item end  -->
+                            <!-- list item start  -->
+                            <div class="list-item">
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg">
+                                </div>
+                                <label for="comp2">component1</label>
+                                <input type="checkbox" name="components[]" id="comp2">
+                            </div>
+                            <!-- list item end  -->
+                            <!-- list item start  -->
+                            <div class="list-item">
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg">
+                                </div>
+                                <label for="comp3">component1</label>
+                                <input type="checkbox" name="components[]" id="comp3">
+                            </div>
+                            <!-- list item end  -->
+                            <!-- list item start  -->
+                            <div class="list-item">
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg">
+                                </div>
+                                <label for="comp4">component1</label>
+                                <input type="checkbox" name="components[]" id="comp4">
+                            </div>
+                            <!-- list item end  -->
+                            <!-- list item start  -->
+                            <div class="list-item">
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg">
+                                </div>
+                                <label for="comp4">component1</label>
+                                <input type="checkbox" name="components[]" id="comp4">
+                            </div>
+                            <!-- list item end  -->
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <input type="submit" class="btn input" value="add">
+
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+        <!-- end  add client  -->
+        <!-- search section  -->
+        <div class="section container">
+            <div class="col-md-8 col-sm-12 ">
+                <!-- search    -->
+                <div class="row">
+                    <div class="col-sm-6  ">
+                        <input type="text" class="input" name="component" placeholder="component">
+                    </div>
+
+                </div>
+                <!-- end search   -->
+            </div>
+
+
+        </div>
+        <!-- end search section  -->
+
+        <!-- table section  -->
+        <div class="section container">
+            <div class="table-holder">
+                <table>
+                    <thead class="table-header">
+                        <th>
+                            <span>image</span>
+                        </th>
+                        <th>
+                            <span>id</span>
+                        </th>
+                        <th>
+                            <span>brand</span>
+                        </th>
+                        <th>
+                            <span>refrence</span>
+                        </th>
+                        <th>
+                            <span>actions</span>
+                        </th>
+
+
+                    </thead>
+                    <tbody class="table-body">
+
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-holder">
+                                    <img src="img/defaultNoteImage.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>001</td>
+                            <td>acer</td>
+                            <td>G15-25</td>
+                            <td>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <!-- end table section  -->
+
+
+    </div>
+    <!-- end main content  -->
+
+
+
+    <!-- js include  -->
+    <!-- jquery  -->
+    <script src="js/jQuery/jquery-3.6.0.min.js"></script>
+    <!-- end jquery  -->
+
+    <!-- main  -->
+    <script src="js/main.js"></script>
+    <!-- end main  -->
+
+    <!-- end js include  -->
+</body>
+
+</html>
