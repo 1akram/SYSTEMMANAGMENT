@@ -22,9 +22,9 @@ html{
 }
 body{
     font-family: "cairo",sans-serif;
-    background-color: var(--body-bg);
+    background-color: var(--main-color);
     color: var(--forth-color);
-    padding-top: var(--nav-height);
+     
 }
 .color-second{
     color: var(--second-color);
@@ -119,33 +119,43 @@ select{
 .table-holder{
     width: 100%;
 }
-.table-holder table{
-    text-align: center;
-    width: 100%;
-    border-collapse: collapse;
+.table-holder i{
+    margin: 5px 10px;
 }
-.table-holder .table-header {
-    background-color: var(--second-color);
+
+.table-holder .table-header ,
+.table-holder .table-body{
+    display: flex;
+    width: 100%;
+ 
+    align-items: center;
+    text-align: center  ;
+    padding: 10px 5px;
+}
+
+.table-holder .table-header{
+    color: var(--main-color);
     font-size: 1.2em;
     font-weight: bold;
-    display: table;
-    width: 100%;
-    table-layout: fixed; 
-}
-.table-holder .table-header th{
-    padding: 5px 10px;
-}
+    background-color: var(--second-color);
+
+} 
 .table-holder .table-body{
-    display: block;
-    overflow-y: auto;
     max-height: 500px;
+    overflow-y: auto;
+    flex-flow: column;
 }
-.table-holder .table-body tr{
-    border-bottom: 2px solid var(--second-color);
+.table-holder .table-body .tr{
     background-color: var(--third-color);
-    display: table;
-    table-layout: fixed;
     width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid var(--second-color);
+
+}
+.tr div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* start form  */
 .form-holder{
@@ -256,7 +266,7 @@ select{
      transition: 0.3s;
  }
 .list-item img,
-table .image-holder img{
+.image-holder img{
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -387,7 +397,7 @@ table .image-holder img{
 .item-link:hover,.item-link.active{
     background-color: var(--main-color);
     border-radius: 0px 10px 10px 0px;
-    color: var(--third-color);
+    color: var(--forth-color);
 }
 .item-link::after,.item-link::before{
     content: '';
@@ -452,6 +462,43 @@ table .image-holder img{
  
      
 }
+@media screen and (max-width:770px) {
+   .table-holder{
+       display: flex;
+       flex-flow: row;
+   }
+   .table-holder .table-header{
+       width: 30%;
+       display: unset;
+       
+   }
+   .table-holder .table-header div{
+     
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+   .table-holder .table-body  {
+       height: 360px;
+   }
+   .table-holder .table-body .tr{
+       display: unset;
+   }
+   
+   .table-holder .table-body,
+   .table-holder .table-header{
+       padding: unset;
+   }
+   .table-holder .table-header div,
+   .tr div
+    {
+       height: 60px;
+   }
+    
+  
+ 
+     
+}
 
 @media screen and (max-width:500px) {
     .login-holder form {
@@ -462,5 +509,8 @@ table .image-holder img{
     }
     .login-holder .form-element{
         width: 100%;
+    }
+    .table-holder .table-header{
+        font-size: 0.9em;
     }
 }
